@@ -1,7 +1,12 @@
 // zone d'import
+import './addTodoItem.css'
 
 // component 
 function addTodoItem() {
+
+  function handleAdd () {
+
+  }
     
   return (
     <div className="addTodoItem">

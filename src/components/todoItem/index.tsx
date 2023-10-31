@@ -1,14 +1,15 @@
 // zone d'import
+import './todoItem.css'
 
 /* component */
-function todoItem() {
+function todoItem(key: number, todo: string) {
     
   return (
-    <div className="todoItem">
+    <li className="todoItem">
         <input type="checkbox" />
-        <p>Todo item</p>
+        <p></p>
         <button>Supprimer</button>      
-    </div>
+    </li>
   )
 }
 
