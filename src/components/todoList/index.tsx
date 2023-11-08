@@ -1,24 +1,17 @@
 // zone d'import
-import { useState } from 'react'
 import TodoItem from "../todoItem";
 import './todoList.css'
 
 // component 
-function todoList() {
-
-  const [todos, setTodos] = useState([
-    { value: 'Todo 1', completed: false },
-    { value: 'Todo 2', completed: false },
-    { value: 'Todo 3', completed: false },
-  ])
+function TodoList(props: { todos, handleDeleteTodoItem }) {
 
   return (
     <ul className="todoList">
-      {todos.map((t, index) => (
-        <TodoItem key={index} todo={t.value} />
+      {props.todos.map((t, index) => (
+        <TodoItem id={index} onDelete={props.handleDeleteTodoItem} key={index} todo={t.value} status={t.completed} />
       ))}
     </ul>
   )
 }
 
-export default todoList;
+export default TodoList;
