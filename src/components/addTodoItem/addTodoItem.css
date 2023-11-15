@@ -1,5 +1,18 @@
 .addTodoItem {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+input#add-input {
+  height: 100%;
+  border-radius: 10px;
+  border: solid 1.5px #a4abbd;
+  padding: 12px;
+  width: 80%;
+}
+
+button#add-btn {
+  /* padding: 24px 24px; */
 }
