@@ -8,8 +8,8 @@ function AddTodoItem(props: { onAdd }) {
 
   return (
     <div className="addTodoItem">
-      <input id='add-item' type="text" placeholder="Ajouter une nouvelle todo ..." onChange={(e) => setvalue(e.target.value)} value={value}/>
-      <button onClick={() => { props.onAdd(value)
+      <input id='add-input' type="text" placeholder="Ajouter une nouvelle todo ..." onChange={(e) => setvalue(e.target.value)} value={value}/>
+      <button id='add-btn' onClick={() => { props.onAdd(value)
       setvalue(" ")}}>Ajouter</button>
     </div>
   )
